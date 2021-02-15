@@ -4,17 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/design_default_color_primary_variant"
+    android:background="@color/white"
     android:visibility="visible"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_login"
+        android:layout_width="410dp"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="0"
+        android:background="#03A9F4"
         android:gravity="center|center_horizontal|center_vertical"
-        android:text="안녕하세요"
+        android:text="로그인"
         android:textSize="36sp" />
 
     <EditText
@@ -22,10 +26,59 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="400"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="아이디를 입력하시오"
+        android:text="아이디 입력"
         android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="338dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="비밀번호 입력"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_getLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="253dp"
+        android:text="login" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92"
+        android:layout_marginBottom="253dp"
+        android:text="sign up" />
+
+    <Button
+        android:id="@+id/btn_findpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="194dp"
+        android:text="forgot your password?" />
 
 </RelativeLayout>
